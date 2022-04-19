@@ -2,4 +2,5 @@
 *This application will generate jokes based on user's choice
 
 
-*Application url:
+*Application url:  https://vanikarun21.github.io/Cure4Boredom/
+
