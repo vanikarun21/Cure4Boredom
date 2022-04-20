@@ -1,14 +1,26 @@
-//DadJoke
+var dadJokeApiUrl = "https://icanhazdadjoke.com";
+var inspQuotesApiUrl = "https://api.aakhilv.me";
+var sunriseSunsetApiUrl ="https://api.sunrise-sunset.org/json";
+var randomJokesApiUrl ="https://api.humorapi.com/jokes/random";
+
+// DadJoke
 var displayDad = document.getElementById('displayJokes');
-var dadJokes = document.getElementById('Dad Jokes');
-dadJoke();
+var dadJokes = document.getElementById('dad-jokes');
+
 async function dadJoke() {
-    var res = await fetch("");
-    var data = await res.json(); //convert to json
-    console.log(data)
-    displayDad.innerText = data.value.joke;
+    var res = await fetch(dadJokeApiUrl, {
+        headers: {
+            Accept: "application/json"
+        }
+    });
+    var joke = await res.json();
+    var textareaJoke = joke.joke;
+    console.log(joke);
+    displayDad.innerText = textareaJoke;
 }
+
 dadJokes.addEventListener('click', dadJoke);
+
 //RandomJoke
 var displayRandom = document.getElementById('random');
 var randomJoke = document.getElementById('Random Jokes');
