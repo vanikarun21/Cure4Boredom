@@ -1,6 +1,7 @@
 var displayJoke = document.getElementById('displayJokes');
 var dadJokes = document.getElementById('Dad Jokes');
 getJoke();
+// ra();
 
 async function getJoke() {
 	var res = await fetch("https://api.icndb.com/jokes/random");
@@ -10,5 +11,9 @@ async function getJoke() {
 }
 
 dadJokes.addEventListener('click', getJoke);
+
+
+
+
 
 
