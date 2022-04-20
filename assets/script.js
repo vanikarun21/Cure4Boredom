@@ -1,4 +1,4 @@
-//
+
 //DadJoke
 var displayDad = document.getElementById('displayJokes');
 var dadJokes = document.getElementById('Dad Jokes');
