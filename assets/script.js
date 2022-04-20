@@ -6,7 +6,7 @@ dadJoke();
 dadJokes.addEventListener('click', dadJoke);
 
 async function dadJoke() {
-	var res = await fetch("https://api.icndb.com/jokes/random");
+	var res = await fetch("");
 	var data = await res.json(); //convert to j
 	//console.log(data)
 	if (res.ok){
