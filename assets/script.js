@@ -6,7 +6,7 @@ dadJoke();
 
 
 async function dadJoke() {
-	var res = await fetch("https://api.icndb.com/jokes/random");
+	var res = await fetch("");
 	var data = await res.json(); //convert to json
 	console.log(data)
 	
@@ -23,7 +23,7 @@ randomJoke();
 
 
 async function randomJoke() {
-	var res = await fetch("https://api.icndb.com/jokes/random");
+	var res = await fetch("");
 	var data = await res.json();
 	
 	displayRandom.innerText = data.value.joke;
@@ -38,7 +38,7 @@ Quotes();
 
 
 async function Quotes() {
-	var res = await fetch("https://api.icndb.com/jokes/random");
+	var res = await fetch("");
 	var data = await res.json();
 	
 	inspQuotes.innerText = data.value.joke;
@@ -53,7 +53,7 @@ sunRiseQuotes();
 
 
 async function sunRiseQuotes() {
-	var res = await fetch("https://api.icndb.com/jokes/random");
+	var res = await fetch("");
 	var data = await res.json();
 	
 	sunRise.innerText = data.value.joke;
