@@ -22,32 +22,45 @@ async function dadJoke() {
 dadJokes.addEventListener('click', dadJoke);
 
 //RandomJoke
-var displayRandom = document.getElementById('random');
-var randomJoke = document.getElementById('Random Jokes');
-randomJoke();
-async function randomJoke() {
-    var res = await fetch("");
-    var data = await res.json();
-    displayRandom.innerText = data.value.joke;
-}
-randomJoke.addEventListener('click', randomJoke);
+// var displayRandom = document.getElementById('displayRandom');
+// var randomJokes = document.getElementById('random-jokes');
+//randomJokes();
+// async function randomJokes() {
+//     var res = await fetch(randomJokesApiUrl, {
+//         headers: {
+//             Accept: "application/json"
+//         }
+//     });
+//     var random = await res.json();
+//     var textareaRandomJokes = random.random;
+//     console.log(random);
+//     displayRandom.innerText = textareaRandomJokes
+// }
+// randomJokes.addEventListener('click', randomJokes);
+
 //Inspirational Quotes
-var inspQuotes = document.getElementById('quotes');
-var quotes = document.getElementById('Inspirational quotes');
-Quotes();
-async function Quotes() {
-    var res = await fetch("");
-    var data = await res.json();
-    inspQuotes.innerText = data.value.joke;
-}
-quotes.addEventListener('click', Quotes);
+// var inspQuotes = document.getElementById('quotes');
+// var quotes = document.getElementById('Inspirational quotes');
+// Quotes();
+// async function Quotes() {
+//     var res = await fetch("");
+//     var data = await res.json();
+//     inspQuotes.innerText = data.value.joke;
+// }
+// quotes.addEventListener('click', Quotes);
 //Sunrise Sunset
-var sunRise = document.getElementById('quotes');
-var sunQuotes = document.getElementById('Inspirational quotes');
-sunRiseQuotes();
-async function sunRiseQuotes() {
-    var res = await fetch("");
-    var data = await res.json();
-    sunRise.innerText = data.value.joke;
-}
-sunQuotes.addEventListener('click', sunRiseQuotes);
+// var sunRise = document.getElementById('quotes');
+// var sunQuotes = document.getElementById('Inspirational quotes');
+// sunRiseQuotes();
+// async function sunRiseQuotes() {
+//     var res = await fetch("");
+//     var data = await res.json();
+//     sunRise.innerText = data.value.joke;
+// }
+// sunQuotes.addEventListener('click', sunRiseQuotes);
+
+//Local Storage
+window.localStorage
+
+//Clear local storage
+localStorage.clear();
