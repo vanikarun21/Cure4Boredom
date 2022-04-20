@@ -6,4 +6,48 @@ h1{
     text-align: center;
 }
 
+.appBackground {
+    position: relative;
+    /* background-image: url(".../img/background.jpg"); */
+    background-repeat:no-repeat;
+    background-size:cover;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark{
+    color: black;
+    background-color: rgba(255, 255, 255, .4);
+    padding:10px;
+
+}
+
+
+
+.rounded{
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+#about{
+    position: absolute;
+    top: 10px;
+    right:20px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, .4);
+}
+
+#about:hover{
+    background-color: white;
+}
+
+#aboutInfo{
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: white;
+}
 
