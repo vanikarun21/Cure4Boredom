@@ -1,8 +1,8 @@
 var dadJokeApiUrl = "https://icanhazdadjoke.com";
 var inspQuotesApiUrl = "https://api.aakhilv.me";
 var sunriseSunsetApiUrl ="https://api.sunrise-sunset.org/json";
-var randomJokesApiUrl ="https://api.humorapi.com/jokes/random";
-
+ var randomJokesApiUrl ="https://api.humorapi.com/jokes/random?api-key=b00f3ac51d2e490a9253aecae0b40001";
+// var randomJokesApiUrl ="https://api.humorapi.com/jokes/random";
 // DadJoke
 var displayDad = document.getElementById('displayJokes');
 var dadJokes = document.getElementById('dad-jokes');
@@ -54,23 +54,25 @@ about.addEventListener('click', function(){
     }
 })
 
-//RandomJoke
-// var displayRandom = document.getElementById('displayRandom');
-// var randomJokes = document.getElementById('random-jokes');
-//randomJokes();
-// async function randomJokes() {
-//     var res = await fetch(randomJokesApiUrl, {
-//         headers: {
-//             Accept: "application/json"
-//         }
-//     });
-//     var random = await res.json();
-//     var textareaRandomJokes = random.random;
-//     console.log(random);
-//     displayRandom.innerText = textareaRandomJokes
-// }
-// randomJokes.addEventListener('click', randomJokes);
+// RandomJoke
+var displayRandom = document.getElementById('random');
+var randomJokes = document.getElementById('random-jokes');
 
+async function jokes() {
+    var res = await fetch(randomJokesApiUrl, {
+        headers: {
+
+            Accept: "application/json"
+        }
+    });
+    var random = await res.json();
+    var textareaRandomJokes = random.joke;
+    console.log(random);
+    displayRandom.innerText = textareaRandomJokes
+}
+randomJokes.addEventListener('click', jokes);
+// double check ids, class, variable names, check api resources(refer to docs / may need api key)
+// randomJokes();
 //Inspirational Quotes
 // var inspQuotes = document.getElementById('quotes');
 // var quotes = document.getElementById('Inspirational quotes');
