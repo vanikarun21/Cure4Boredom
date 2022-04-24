@@ -68,7 +68,7 @@ async function jokes() {
     var random = await res.json();
     var textareaRandomJokes = random.joke;
     console.log(random);
-    displayRandom.innerText = textareaRandomJokes
+    displayRandom.innerText = textareaRandomJokes;
 }
 randomJokes.addEventListener('click', jokes);
 // double check ids, class, variable names, check api resources(refer to docs / may need api key)
@@ -76,7 +76,7 @@ randomJokes.addEventListener('click', jokes);
 
 
 // Fun Facts
-var inspQuotes = document.getElementById('quotes');
+var inspQuotes = document.getElementById('facts');
 var quotes = document.getElementById('fun-facts');
 
 async function Quotes() {
