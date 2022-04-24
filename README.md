@@ -4,8 +4,13 @@
 
 *Application url:  https://vanikarun21.github.io/Cure4Boredom/
 
-![Screenshot 1](https://raw.githubusercontent.com/jinjoolee1/boredom-project/main/Screenshot%201%20for%20project.png)
-![Screenshot 2](https://raw.githubusercontent.com/jinjoolee1/boredom-project/main/Screenshot%202%20for%20project.png)
+Main site screenshot:
+![Main site](https://raw.githubusercontent.com/jinjoolee1/boredom-project/main/Screenshot%201%20for%20project.png)
+
+Main site with NASA API information launched:
+![With NASA API launched](https://raw.githubusercontent.com/jinjoolee1/boredom-project/main/Screenshot%202%20for%20project.png)
+
+Main content of page with joke/fact APIs clicked:
 ![Screenshot 3](https://raw.githubusercontent.com/jinjoolee1/boredom-project/main/Screenshot%203%20for%20project.png)
 
 Project credits: 
