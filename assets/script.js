@@ -1,5 +1,5 @@
 var dadJokeApiUrl = "https://icanhazdadjoke.com";
-var inspQuotesApiUrl = "https://api.aakhilv.me";
+var inspQuotesApiUrl = "https://api.aakhilv.me/fun/facts";
 var sunriseSunsetApiUrl ="https://api.sunrise-sunset.org/json";
  var randomJokesApiUrl ="https://api.humorapi.com/jokes/random?api-key=b00f3ac51d2e490a9253aecae0b40001";
 // var randomJokesApiUrl ="https://api.humorapi.com/jokes/random";
