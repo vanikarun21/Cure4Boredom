@@ -73,29 +73,24 @@ async function jokes() {
 randomJokes.addEventListener('click', jokes);
 // double check ids, class, variable names, check api resources(refer to docs / may need api key)
 // randomJokes();
-//Inspirational Quotes
-// var inspQuotes = document.getElementById('quotes');
-// var quotes = document.getElementById('Inspirational quotes');
-// Quotes();
-// async function Quotes() {
-//     var res = await fetch("");
-//     var data = await res.json();
-//     inspQuotes.innerText = data.value.joke;
-// }
-// quotes.addEventListener('click', Quotes);
-//Sunrise Sunset
-// var sunRise = document.getElementById('quotes');
-// var sunQuotes = document.getElementById('Inspirational quotes');
-// sunRiseQuotes();
-// async function sunRiseQuotes() {
-//     var res = await fetch("");
-//     var data = await res.json();
-//     sunRise.innerText = data.value.joke;
-// }
-// sunQuotes.addEventListener('click', sunRiseQuotes);
 
-//Local Storage
-window.localStorage
 
-//Clear local storage
-localStorage.clear();
+// Fun Facts
+var inspQuotes = document.getElementById('quotes');
+var quotes = document.getElementById('fun-facts');
+
+async function Quotes() {
+    var res = await fetch(inspQuotesApiUrl, {
+        headers: {
+
+            Accept: "application/json"
+        }
+    }); 
+    var inspQuotesRes = await res.json();
+    var textareainspQuotes = inspQuotesRes[0]
+    console.log(inspQuotesRes);
+    inspQuotes.innerText = textareainspQuotes;
+}
+
+quotes.addEventListener('click', Quotes);
+
